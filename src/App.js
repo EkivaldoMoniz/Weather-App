@@ -10,13 +10,11 @@ const App = () => {
         if (e.key === 'Enter') {
 
             try{
-            const data = await fetchWeather(query);
-            setWeather(data);
-            setQuery('');  
+                const data = await fetchWeather(query);
+                setWeather(data);
+                setQuery('');  
             }
-                   
             catch (error){
-                console.log('Erro', error)
                 alert("Cidade não localizada!");
             }
                            
