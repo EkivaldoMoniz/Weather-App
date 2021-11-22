@@ -17,10 +17,9 @@ const App = () => {
                    
             catch (error){
                 console.log('Erro', error)
-                alert("Indisponível");
+                alert("Cidade não localizada!");
             }
-                         
-           
+                           
         }            
     }
 
